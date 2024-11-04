@@ -22,7 +22,7 @@ const Hero = () => {
 
   return (
     <main className="relative">
-      <div className="bg-gradient-to-br from-[#BD1F17] via-[#A61D13] to-[#8E1B0F] absolute h-full w-full lg:h-screen lg:w-screen">
+      <div className="bg-gradient-to-br from-[#BD1F17] via-[#A61D13] to-[#8E1B0F] absolute h-full w-full lg:h-screen">
         <img src={heroBg} alt="hero" className="h-full lg:w-full" />
       </div>
 
