@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Carousel from "./components/Carousel/Carousel";
 import Hero from "./components/Hero";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <Hero />
       <About />
+      <Carousel />
     </>
   );
 }
