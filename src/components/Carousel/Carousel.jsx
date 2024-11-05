@@ -20,10 +20,10 @@ const Carousel = () => {
       <img
         src={vector2}
         alt="vector image"
-        className="absolute left-0 top-[40%] lg:block hidden"
+        className="absolute left-0 top-[40%] lg:block hidden h-[256px]"
       />
 
-      <section className="">
+      <section>
         <div className="space-y-5">
           <div className="flex items-center gap-2">
             <div className="bg-[#BD1F17] w-[10px] h-[10px]"></div>
@@ -82,7 +82,7 @@ const Carousel = () => {
           },
         }}
         modules={[Autoplay]}
-        className="mt-10 h-72"
+        className="mt-10 h-[300px]"
       >
         {foods.map((item) => (
           <SwiperSlide key={item.id} className="bg-white">

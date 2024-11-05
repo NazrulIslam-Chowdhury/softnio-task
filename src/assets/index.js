@@ -1,4 +1,6 @@
 import heroBg from "./hero-bg.png";
+import formBg from "./form-bg.jpg";
+
 import heroImg from "./hero-img.png";
 import logo from "./logo.png";
 import offer from "./offer.png";
@@ -20,6 +22,7 @@ import chicken from "./chicken.png";
 
 export {
   heroBg,
+  formBg,
   heroImg,
   logo,
   offer,

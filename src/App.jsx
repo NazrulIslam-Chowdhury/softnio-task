@@ -1,5 +1,6 @@
 import About from "./components/About";
 import Carousel from "./components/Carousel/Carousel";
+import Form from "./components/Form";
 import Hero from "./components/Hero";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <Hero />
       <About />
       <Carousel />
+      <Form />
     </>
   );
 }
