@@ -37,7 +37,7 @@ const Hero = () => {
             <div>
               <div className="flex items-center gap-1">
                 <img src={logo} alt="logo" />
-                <p className="font-semibold text-white text-3xl tracking-widest">
+                <p className="font-semibold font-poppins text-white text-3xl tracking-widest">
                   Restau<span className="font-thin">rant</span>
                 </p>
               </div>

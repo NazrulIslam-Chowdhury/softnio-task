@@ -12,8 +12,10 @@ const Form = () => {
   } = useForm();
 
   const submitData = (data) => {
-    // e.preventDefault();
     console.log(data);
+    alert("Form submitted");
+    setDate("");
+    reset();
   };
   return (
     <main className="form-bg bg-top">
@@ -31,6 +33,7 @@ const Form = () => {
             molestie vel, ornare non id blandit netus.
           </p>
         </div>
+
         <form onSubmit={handleSubmit(submitData)} className=" w-full space-y-5">
           <div className="flex flex-col lg:flex-row items-center gap-5">
             <div className="w-full">
@@ -73,7 +76,7 @@ const Form = () => {
                   onChange={(e) => setDate(e.target.value)}
                 />
               </div>
-              {errors.date && (
+              {date === "" && errors.date && (
                 <p className="text-red-600">This field is required</p>
               )}
             </div>
