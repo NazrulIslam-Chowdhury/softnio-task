@@ -1,5 +1,6 @@
 import heroBg from "./hero-bg.png";
 import formBg from "./form-bg.jpg";
+import footerBg from "./footer-bg.jpg";
 
 import heroImg from "./hero-img.png";
 import logo from "./logo.png";
@@ -23,6 +24,11 @@ import packageIcon from "./package.png";
 import medal from "./medal.png";
 import bag from "./bag.png";
 
+import clock from "./clock.png";
+import callAlt from "./call-alt.png";
+import mail from "./mail.png";
+import mapPin from "./map-pin.png";
+
 import burger from "./burger.png";
 import pizza from "./pizza.png";
 import fries from "./fries.png";
@@ -31,7 +37,7 @@ import chicken from "./chicken.png";
 export {
   heroBg,
   formBg,
-  heroImg,
+  footerBg,
   logo,
   offer,
   vector,
@@ -44,6 +50,7 @@ export {
   aboutImg,
   profileImg,
   testimonialsImg,
+  heroImg,
   play,
   expBadge,
   phone,
@@ -54,4 +61,8 @@ export {
   pizza,
   fries,
   chicken,
+  clock,
+  callAlt,
+  mail,
+  mapPin,
 };

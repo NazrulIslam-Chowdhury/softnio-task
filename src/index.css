@@ -16,7 +16,11 @@
   background-image: url('./assets/form-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  /* background-position: center; */
+  background-attachment: fixed;
+}
+.footer-bg{
+  background-image: url('./assets/footer-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   /* background-attachment: fixed; */
 }

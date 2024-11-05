@@ -30,7 +30,7 @@ const Hero = () => {
       <header
         className={`${
           scrolled ? "bg-[#A61D13]" : "bg-transparent"
-        } fixed top-0 container mx-auto z-20 transition-all`}
+        } fixed top-0 container mx-auto z-30 transition-all`}
       >
         <nav className=" flex items-center justify-between py-3 px-5 md:px-16 lg:px-24 xl:px-40">
           <div className="flex gap-[60px]">

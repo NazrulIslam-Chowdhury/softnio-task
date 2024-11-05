@@ -18,7 +18,7 @@ const Form = () => {
     reset();
   };
   return (
-    <main className="form-bg bg-top">
+    <main className="form-bg bg-top mt-5">
       <section className="py-16 px-5 md:px-16 lg:px-24 xl:px-40 lg:w-[58rem] space-y-10">
         <div className="space-y-5">
           <div className="flex items-center gap-2">

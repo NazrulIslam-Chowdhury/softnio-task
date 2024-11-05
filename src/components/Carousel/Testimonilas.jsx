@@ -8,7 +8,7 @@ import {
   MdOutlineKeyboardArrowLeft,
   MdOutlineKeyboardArrowRight,
 } from "react-icons/md";
-import { foods } from "../../../constants";
+
 
 const Testimonials = () => {
   SwiperCore.use([Navigation]);
@@ -82,7 +82,7 @@ const Testimonials = () => {
                 <img
                   src={vector6}
                   alt="vector image"
-                  className="absolute bottom-0"
+                  className="absolute bottom-4"
                 />
                 <div className="p-10 lg:p-20">
                   <div>
