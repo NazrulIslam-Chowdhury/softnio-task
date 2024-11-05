@@ -13,6 +13,11 @@ import packageIcon from "./package.png";
 import medal from "./medal.png";
 import bag from "./bag.png";
 
+import burger from "./burger.png";
+import pizza from "./pizza.png";
+import fries from "./fries.png";
+import chicken from "./chicken.png";
+
 export {
   heroBg,
   heroImg,
@@ -27,4 +32,8 @@ export {
   packageIcon,
   medal,
   bag,
+  burger,
+  pizza,
+  fries,
+  chicken,
 };

@@ -3,13 +3,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css/bundle";
 import SwiperCore from "swiper";
-
-// import CustomNavigation from "./CustomNavigation";
 import { useRef } from "react";
 import {
   MdOutlineKeyboardArrowLeft,
   MdOutlineKeyboardArrowRight,
 } from "react-icons/md";
+import { foods } from "../../../constants";
 
 const Carousel = () => {
   SwiperCore.use([Navigation]);
@@ -36,7 +35,7 @@ const Carousel = () => {
             POPULAR FOOD ITEMS
           </h3>
         </div>
-        <div className="flex gap-4 absolute bottom-0  lg:right-40 lg:top-24">
+        <div className="flex gap-4 absolute bottom-0 right-[35%] lg:right-40 lg:top-24">
           <button
             ref={prevRef}
             className="bg-white shadow-lg p-4 rounded-full hover:text-[#BD1F17] transition-all w-[60px] h-[60px]"
@@ -83,14 +82,22 @@ const Carousel = () => {
           },
         }}
         modules={[Autoplay]}
-        className="h-80 mt-10"
+        className="mt-10 h-72"
       >
-        {[1, 2, 3, 4, 5].map((item, index) => (
-          <SwiperSlide
-            key={index}
-            className="bg-white shadow-xl flex items-center justify-center"
-          >
-            {item}
+        {foods.map((item) => (
+          <SwiperSlide key={item.id} className="bg-white">
+            <div className="flex flex-col items-center justify-center gap-5 p-5">
+              <img src={item.img} alt={item.title} />
+
+              <div className="h-[3px] bg-[#BD1F17] w-16"></div>
+
+              <div className="text-center">
+                <h4 className="font-bebasNeue font-semibold text-[24px] leading-[36px]">
+                  {item.title}
+                </h4>
+                <p className="text-[16px] leading-[32px]">{item.description}</p>
+              </div>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
