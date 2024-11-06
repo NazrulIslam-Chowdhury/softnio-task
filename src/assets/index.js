@@ -4,14 +4,14 @@ import footerBg from "./footer-bg.jpg";
 
 import heroImg from "./hero-img.png";
 import logo from "./logo.png";
-import offer from "./offer.png";
+import offer from "./Offer.png";
 import aboutImg from "./about-img.png";
 import profileImg from "./profile-img.png";
 import testimonialsImg from "./testimonials-img.png";
-import play from "./play.png";
+import play from "./Play.png";
 import expBadge from "./exp-badge.png";
 
-import vector from "./vector.png";
+import vector from "./Vector.png";
 import vector2 from "./vector 2.png";
 import vector3 from "./vector 3.png";
 import vector4 from "./vector 4.png";
