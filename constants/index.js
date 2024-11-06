@@ -4,7 +4,7 @@ export const navLists = [
   {
     id: 1,
     list: "Home",
-    link: "/home",
+    link: "home",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ export const navLists = [
   {
     id: 4,
     list: "Clients",
-    link: "home",
+    link: "clients",
   },
   {
     id: 5,

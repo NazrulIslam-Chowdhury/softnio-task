@@ -2,9 +2,11 @@ import { useEffect, useState } from "react";
 import { navLists } from "../../constants";
 import { heroBg, heroImg, logo, offer, vector } from "../assets/index";
 import { IoMenuSharp } from "react-icons/io5";
+import MobileMenuDrawer from "./MobileMenuDrawer";
 
 const Hero = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,6 +21,12 @@ const Hero = () => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleMobileDrawer = () => {
+    setOpen(true);
+    (document.body.style.overflow = "hidden")
+
+  };
 
   return (
     <main className="relative">
@@ -51,12 +59,16 @@ const Hero = () => {
             </ul>
           </div>
           <div className="bg-[#febf00] px-5 py-2 hidden lg:block">
-            <button className=" font-semibold uppercase">Book a table</button>
+            <button className=" font-semibold uppercase ">Book a table</button>
           </div>
 
-          {/* sm device menu bar later*/}
+          {/* mobile menu drawer */}
           <div className="lg:hidden block">
-            <IoMenuSharp className="text-white size-[36px] cursor-pointer" />
+            <IoMenuSharp
+              onClick={handleMobileDrawer}
+              className="text-white size-[36px] cursor-pointer"
+            />
+            <MobileMenuDrawer open={open} setOpen={setOpen} />
           </div>
         </nav>
       </header>
@@ -71,7 +83,7 @@ const Hero = () => {
           </div>
 
           <div className="space-y-8">
-            <p className="w-[25rem]">
+            <p className="lg:w-[25rem]">
               Among the best Saudi chefs in the world, serving you something
               beyond flavor.{" "}
             </p>
