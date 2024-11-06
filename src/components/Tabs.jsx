@@ -4,7 +4,7 @@ import { phone } from "../assets";
 
 const Tabs = () => {
   const [showTab, setShowTab] = useState("About");
-  console.log(showTab);
+
   return (
     <main>
       <ul className="flex">

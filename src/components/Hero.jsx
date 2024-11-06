@@ -105,7 +105,7 @@ const Hero = () => {
             className="absolute -top-6 -right-4 lg:-right-6"
           />
           <div className="absolute -bottom-4 -right-2 lg:-right-16">
-            <img src={offer} alt="vector image" />
+            <img src={offer} alt="offer image" />
           </div>
         </div>
       </section>

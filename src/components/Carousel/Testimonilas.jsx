@@ -1,4 +1,12 @@
-import { play, profileImg, testimonialsImg, vector4, vector5, vector6, vector7 } from "../../assets";
+import {
+  play,
+  profileImg,
+  testimonialsImg,
+  vector4,
+  vector5,
+  vector6,
+  vector7,
+} from "../../assets";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css/bundle";
@@ -8,7 +16,6 @@ import {
   MdOutlineKeyboardArrowLeft,
   MdOutlineKeyboardArrowRight,
 } from "react-icons/md";
-
 
 const Testimonials = () => {
   SwiperCore.use([Navigation]);
@@ -75,8 +82,8 @@ const Testimonials = () => {
         modules={[Autoplay]}
         className="mt-10"
       >
-        {[1,2,3].map((item) => (
-          <SwiperSlide key={item.id} className="bg-gray-200/60">
+        {[1, 2, 3].map((item, idx) => (
+          <SwiperSlide key={idx} className="bg-gray-200/60">
             <div className="flex flex-col-reverse lg:flex-row">
               <section className="bg-[#febf00] relative lg:w-[45%]">
                 <img
@@ -112,8 +119,16 @@ const Testimonials = () => {
                 </div>
               </section>
               <section className="bg-[#febf00] relative lg:w-[55%]">
-                <img src={testimonialsImg} alt="testimonials image" className="h-96 lg:h-full object-cover"/>
-                <img src={play} alt="play" className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2"/>
+                <img
+                  src={testimonialsImg}
+                  alt="testimonials image"
+                  className="h-96 lg:h-full object-cover"
+                />
+                <img
+                  src={play}
+                  alt="play"
+                  className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2"
+                />
               </section>
             </div>
           </SwiperSlide>
