@@ -35,7 +35,7 @@ const MobileMenuDrawer = ({ open, setOpen }) => {
         className="cursor-pointer size-7 bg-[#BD1F17] text-white p-2 rounded-full float-end"
       />
 
-      <ul className="mt-16">
+      <ul className="mt-16 text-start">
         {navLists.map((list) => (
           <li
             key={list.id}

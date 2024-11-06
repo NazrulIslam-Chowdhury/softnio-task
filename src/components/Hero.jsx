@@ -10,7 +10,7 @@ const Hero = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 40) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -24,8 +24,7 @@ const Hero = () => {
 
   const handleMobileDrawer = () => {
     setOpen(true);
-    (document.body.style.overflow = "hidden")
-
+    document.body.style.overflow = "hidden";
   };
 
   return (
@@ -38,7 +37,7 @@ const Hero = () => {
       <header
         className={`${
           scrolled ? "bg-[#A61D13]" : "bg-transparent"
-        } fixed top-0 container mx-auto z-30 transition-all`}
+        } fixed top-0  z-30 transition-all w-full`}
       >
         <nav className=" flex items-center justify-between py-3 px-5 md:px-16 lg:px-24 xl:px-40">
           <div className="flex gap-[60px]">
@@ -64,10 +63,12 @@ const Hero = () => {
 
           {/* mobile menu drawer */}
           <div className="lg:hidden block">
-            <IoMenuSharp
-              onClick={handleMobileDrawer}
-              className="text-white size-[36px] cursor-pointer"
-            />
+            <button disabled={open}>
+              <IoMenuSharp
+                onClick={handleMobileDrawer}
+                className="text-white size-[36px] cursor-pointer"
+              />
+            </button>
             <MobileMenuDrawer open={open} setOpen={setOpen} />
           </div>
         </nav>

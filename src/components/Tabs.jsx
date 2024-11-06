@@ -34,12 +34,12 @@ const Tabs = () => {
                   {tabContent.description}
                 </p>
                 <div className="flex items-center gap-8">
-                  <button className=" font-semibold uppercase text-black bg-[#febf00] px-5 py-2">
+                  <button className=" font-semibold uppercase text-black bg-[#febf00] px-5 py-2 lg:text-base text-sm">
                     About {tabContent.tab}
                   </button>
                   <div className="flex items-center gap-2">
                     <img src={phone} alt="phone icon" />
-                    <p>+88 3426 739 485</p>
+                    <p className="lg:text-base text-sm">+88 3426 739 485</p>
                   </div>
                 </div>
               </div>

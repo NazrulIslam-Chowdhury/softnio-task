@@ -20,7 +20,7 @@ const Carousel = () => {
       <img
         src={vector2}
         alt="vector image"
-        className="absolute left-0 top-[40%] lg:block hidden h-[256px]"
+        className="absolute left-0 top-[30%] lg:block hidden h-[356px]"
       />
 
       <section>
