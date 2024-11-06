@@ -8,7 +8,7 @@
 
 ## 1. Project Overview
 
-This is a simple restaurant landing page.
+This is a simple restaurant landing page,where user can see .
 
 ## 2. Key Architectural Choices
 
