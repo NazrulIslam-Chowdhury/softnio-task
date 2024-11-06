@@ -1,10 +1,10 @@
-# React +  Vite
+# React + Vite
 
 # Restaurant landing page
 
 ## Live Preview
 
-- (https://pixfar-task.vercel.app/)
+- (https://softnio-task.vercel.app/)
 
 ## 1. Project Overview
 
@@ -43,8 +43,7 @@ React Icons enhances the visual appearance of buttons and interactive elements w
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/NazrulIslam-Chowdhury/pixfar-task.git
-   cd your-repo
+   git clone https://github.com/NazrulIslam-Chowdhury/softnio-task.git
    ```
 2. **Run on the terminal:**
    ```bash
