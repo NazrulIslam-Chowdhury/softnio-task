@@ -12,9 +12,9 @@ This is a simple restaurant landing page.
 
 ## 2. Key Architectural Choices
 
-### Redux Toolkit & Redux Persist:
+### React:
 
-The app's state management is handled with Redux Toolkit, simplifying the logic for actions and reducers. This makes it easier to manage the app’s global state, especially for the cart functionality. Redux Persist ensures that cart data is saved to local storage, so users can retain their cart items even after refreshing or closing the browser.
+React for JavaScript library.
 
 ### Swiper Js:
 
